@@ -1,0 +1,11 @@
+<h1>Coaching#answer</h1>
+<p>Find me in app/views/coaching/answer.html.erb</p>
+ <%= @question %>
+
+ <form action="/ask">
+  <label for="question"></label>
+  <input type="text" id="question" name="answer" placeholder="my answer?">
+  <input type="submit" value="Answer">
+</form>
+
+<%= link_to "Ask another question", :controller => "coaching", :action => "ask" %>
